@@ -12,19 +12,23 @@
  */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>"
+      lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 <head>
-  <?php print $head; ?>
-  <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
+    <?php print $head; ?>
+    <title><?php print $head_title; ?></title>
+    <?php print $styles; ?>
+    <?php print $scripts; ?>
 </head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
-      	<?php
-      	$path = drupal_get_path('theme', 'pribehovymotiv');
-		$image_path = $path . '/img/betlem.jpg';
-      	?>
-      	<div id="UnderConstruction" style="position: absolute; width: 96%; height: 99%; background-repeat: no-repeat; background-size: contain; background-position: top center; background-image: url('<?php echo $image_path;?>'); " title="Viribus unitis"></div>
+<body class="<?php print $classes; ?>" <?php print $attributes; ?>>
+<?php
+//TODO !!! Zmenit template pro nedostupnou stranku !!!
+$path = drupal_get_path('theme', 'pribehovymotiv');
+$image_path = $path . '/img/betlem.jpg';
+?>
+<div id="UnderConstruction"
+     style="position: absolute; width: 96%; height: 99%; background-repeat: no-repeat; background-size: contain; background-position: top center; background-image: url('<?php echo $image_path; ?>'); "
+     title="Viribus unitis"></div>
 </body>
 </html>
