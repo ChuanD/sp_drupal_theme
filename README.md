@@ -2,9 +2,14 @@
 Na drupal webu sedí root projektu ve složce sites/all/themes/pribehovymotiv. Autentické téma Drupalu, které řeší všechny potřebné customizace od preprocess funkcí až po stylopisy.
 
 Obsahuje soubory:
+		
 		pribehovymotiv.info – soubor s definici a popisem tematu pro Drupal, definice regionu, zakladni soubor sablony.
+		
 		template.php – Obsahuje PHP preprocress funkce pro drupal, které se starají o drobné úpravy a overridy webu, občas to něco schovává nebo zobrazuje navíc  
+		
 		config.rb – nastavení pro sass->css preprocessor compass, je nutné pro překládání sass souborů použít toho nebo ekvivalentní nastavení!
+		
+	
 	
 Obsahuje složky:
 		
