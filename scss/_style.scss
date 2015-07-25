@@ -1,0 +1,136 @@
+p {
+  font-family: $normalfont;
+  font-size: $NormalFontSize;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+
+}
+
+a {
+  font-size: $NormalFontSize;
+  color: $linkColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $linkColorHover;
+  text-decoration: none;
+}
+
+a:active {
+  color: $linkColorActive;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.active a {
+  color: $linkColorActive;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li a.active {
+  color: $linkColorActive;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $linkColorVisited;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $headingFont;
+  font-size: 1.8em;
+  color: $H1Color;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+h1.title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-family: $headingFont;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: $H2DarkColor;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h2 a {
+  font-family: $headingFont;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: $H2DarkColor;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: $headingFont;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: $NormalFontSize;
+  color: $H2DarkColor;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h3 a {
+  font-family: $headingFont;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: $NormalFontSize;
+  color: $H2DarkColor;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h4 {
+  /*OL format*/
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  vertical-align: baseline;
+  margin-bottom: 10px;
+}
+
+.h2center .pane-title h2 {
+  font-family: $headingFont;
+  font-size: 1.8em;
+  color: $H1Color;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+.fieldset-title, .fieldset-title a {
+  font-family: $normalfont;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  font-size: 1.4em;
+  color: $H2DarkColor;
+  text-decoration: none;
+  font-weight: bold;
+}
+.marker{
+  color: $highlightColor;
+}

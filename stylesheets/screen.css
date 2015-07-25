@@ -1,0 +1,898 @@
+@charset "UTF-8";
+/* HLAVNI CSS MOTIVU SV─ÜTA P┼ś├ŹB─ÜH┼« */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/*DEFINICE VLASTNOSTI*/
+/*Layout Struktura a styly*/
+/*
+Layout a struktura,
+hlavn├ş odd├şly str├ínky,
+z├íkladn├ş funk─Źn├ş prvky,
+rozhodn─Ť kritick├ę CSS
+*/
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background-color: #8c346e;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF6D4B6D', endColorstr='#FF8C346E');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZkNGI2ZCIvPjxzdG9wIG9mZnNldD0iMzElIiBzdG9wLWNvbG9yPSIjNmQ0YjZkIi8+PHN0b3Agb2Zmc2V0PSIzNSUiIHN0b3AtY29sb3I9IiM3NTUwNzEiLz48c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iIzc2NGU3MyIvPjxzdG9wIG9mZnNldD0iMzYlIiBzdG9wLWNvbG9yPSIjNzY1MDcxIi8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiM5YTYzODkiLz48c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iI2E1NjY4ZSIvPjxzdG9wIG9mZnNldD0iNjclIiBzdG9wLWNvbG9yPSIjYTU2MjhkIi8+PHN0b3Agb2Zmc2V0PSI3MiUiIHN0b3AtY29sb3I9IiNhMjViODkiLz48c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iIzhmMzc3MSIvPjxzdG9wIG9mZnNldD0iOTIlIiBzdG9wLWNvbG9yPSIjOGUzOTcxIi8+PHN0b3Agb2Zmc2V0PSI5MiUiIHN0b3AtY29sb3I9IiM4ZTM2NzEiLz48c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iIzhjMzQ2ZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhjMzQ2ZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6d4b6d), color-stop(31%, #6d4b6d), color-stop(35%, #755071), color-stop(36%, #764e73), color-stop(36%, #765071), color-stop(51%, #9a6389), color-stop(59%, #a5668e), color-stop(67%, #a5628d), color-stop(72%, #a25b89), color-stop(91%, #8f3771), color-stop(92%, #8e3971), color-stop(92%, #8e3671), color-stop(95%, #8c346e), color-stop(100%, #8c346e));
+  background-image: -moz-linear-gradient(top, #6d4b6d 0%, #6d4b6d 31%, #755071 35%, #764e73 36%, #765071 36%, #9a6389 51%, #a5668e 59%, #a5628d 67%, #a25b89 72%, #8f3771 91%, #8e3971 92%, #8e3671 92%, #8c346e 95%, #8c346e 100%);
+  background-image: -webkit-linear-gradient(top, #6d4b6d 0%, #6d4b6d 31%, #755071 35%, #764e73 36%, #765071 36%, #9a6389 51%, #a5668e 59%, #a5628d 67%, #a25b89 72%, #8f3771 91%, #8e3971 92%, #8e3671 92%, #8c346e 95%, #8c346e 100%);
+  background-image: linear-gradient(to bottom, #6d4b6d 0%, #6d4b6d 31%, #755071 35%, #764e73 36%, #765071 36%, #9a6389 51%, #a5668e 59%, #a5628d 67%, #a25b89 72%, #8f3771 91%, #8e3971 92%, #8e3671 92%, #8c346e 95%, #8c346e 100%);
+  background-repeat: no-repeat;
+  font-family: Calibri, Candara, Arial, sans-serif; }
+
+#tinymce {
+  background: #cccccc; }
+
+#page {
+  /*top level flex container*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  background-image: url("../img/bottombg.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain; }
+
+#main p {
+  text-indent: 50px; }
+
+div.node {
+  background-color: transparent;
+  margin-bottom: 10px; }
+
+.content, .view-content, .view-content > div {
+  width: 100%;
+  height: 100%; }
+
+ol {
+  margin-bottom: 20px;
+  list-style-type: decimal;
+  list-style-position: inside; }
+
+ol li {
+  font-weight: normal; }
+
+ol ol {
+  padding-left: 2em;
+  list-style-type: lower-alpha; }
+
+ol ol li {
+  text-indent: -1em; }
+
+ol ol ol {
+  padding-left: 2em;
+  list-style-type: lower-roman; }
+
+ol ol ol li {
+  text-indent: -1em; }
+
+fieldset {
+  margin-top: 6px;
+  margin-bottom: 12px; }
+
+.rozcestnipolozka {
+  margin-bottom: 20px; }
+
+/*hlavicka a slogan az do main contentu*/
+#header {
+  /*flexbox page item*/
+  flex: 1;
+  width: 100%;
+  min-height: 237px;
+  /*flexbox header container*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /*pozadi cele hlavicky*/
+  text-align: center;
+  background-image: url("../img/headerbg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  /*cover nebo contain? Tradicni dilema...*/
+  background-size: cover; }
+
+#header-left {
+  /*flexbox header item*/
+  flex: 1;
+  order: 1;
+  text-align: left; }
+
+#header-left-motto {
+  height: 2em;
+  padding: 0.2em; }
+
+#header-left-content {
+  text-align: left;
+  padding: 8px 8px 8px 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100px; }
+
+.headerProfile {
+  width: 100%;
+  height: 100%; }
+  .headerProfile .headerFlex {
+    /*header profile infoFlexBox container*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+  .headerProfile .headerProfileCol:first-child {
+    /*header profile infoFlexBox item*/
+    flex: 0 0;
+    order: 1;
+    width: 100px; }
+  .headerProfile .headerProfileCol:nth-child(2) {
+    flex: 1 1;
+    order: 2; }
+  .headerProfile .headerProfileCol {
+    /*header profile*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+    .headerProfile .headerProfileCol .headerUserPicture {
+      width: 100px;
+      flex: 0 0;
+      order: 1; }
+    .headerProfile .headerProfileCol .headerUsername {
+      flex: 1 1;
+      order: 2;
+      color: black;
+      font-family: "PT Sans", sans-serif;
+      font-size: 1.1em;
+      overflow: hidden;
+      vertical-align: top;
+      text-align: center;
+      padding-top: 0;
+      padding-bottom: 4px;
+      padding-left: 8px; }
+    .headerProfile .headerProfileCol .actionlinkField {
+      flex: 0 1;
+      order: 5;
+      text-align: right; }
+    .headerProfile .headerProfileCol a.actionlink, .headerProfile .headerProfileCol a.actionlink:visited {
+      color: black;
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: none;
+      padding-left: 10px; }
+
+#block-block-1 {
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  color: #fff; }
+
+.views-field-picture .field-content img {
+  vertical-align: top; }
+
+#header-middle {
+  flex: 2;
+  order: 2;
+  text-align: center;
+  /*logo nesmi kolidovat s pozadim*/
+  margin-top: -12px; }
+
+#header-langselect {
+  height: 2em;
+  padding: 0.2em;
+  text-align: center; }
+
+#block-locale-language {
+  /*inline radek v right header nad user menu ÔÇô vlajecky a reg/login*/
+  display: inline-block;
+  /*vizualni kompenzator textu - leveho motta: */
+  margin-top: 0.25em; }
+
+#block-block-6 {
+  /*inline radek v right header nad user menu ÔÇô vlajecky a reg/login*/
+  display: inline-block; }
+
+.language-switcher-locale-url img.language-icon {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 0; }
+
+.language-switcher-locale-url img.language-icon:hover {
+  border: 1px solid #fff;
+  padding: 0; }
+
+#block-block-6 {
+  padding-left: 10px; }
+
+#header-langselect li, #block-locale-language li {
+  display: inline-block; }
+
+#header-right {
+  /*flexbox header item*/
+  flex: 1;
+  order: 3;
+  vertical-align: bottom;
+  /*padding: 2% 0 2% 1%;*/ }
+
+.region-header-langselect {
+  /*child of header-langselect*/ }
+
+.region-header-right {
+  height: 100px;
+  padding: 8px 0 8px 8px;
+  background-color: rgba(255, 255, 255, 0.4); }
+
+#name-and-slogan {
+  /*page flex item*/
+  flex: 0 0 auto;
+  height: 1em;
+  width: 100%;
+  margin-top: -10px;
+  padding: 0 0 10px 0;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white; }
+
+#header-slogan {
+  height: 1em;
+  width: 20%;
+  margin: 0 auto;
+  padding: 0 0 0 3.4em;
+  font-size: 20px; }
+
+ul li.leaf {
+  list-style-image: url("../img/packa.png");
+  list-style-position: inside; }
+
+.tabs ul.primary {
+  text-align: center;
+  white-space: initial; }
+
+/*MENU PRAVEHO SLOUPCE*/
+#content-right .menu li {
+  background-color: #e86c92; }
+
+ul.menu > li {
+  background-color: #be97bf;
+  padding: 4px;
+  margin-bottom: 14px; }
+
+ul.menu > li > a {
+  color: #190b5d;
+  text-decoration: none;
+  font-weight: bold; }
+
+#block-menu-menu-toprightusermenu {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%; }
+
+#block-menu-menu-toprightusermenu h2 {
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px solid black; }
+
+#block-menu-menu-toprightusermenu li {
+  text-align: center;
+  background: none;
+  margin-bottom: 0; }
+
+#block-menu-menu-toprightusermenu {
+  /*administrace a nastaveni, dva odkazy v pravem hornim menu*/ }
+  #block-menu-menu-toprightusermenu li.first {
+    list-style-image: url("../img/menuicons/fajfka.png"); }
+  #block-menu-menu-toprightusermenu li.last {
+    list-style-image: url("../img/menuicons/obalka.png"); }
+  #block-menu-menu-toprightusermenu li.first.last {
+    list-style-image: url("../img/menuicons/fajfka.png"); }
+
+#block-menu-menu-toprightusermenu li a {
+  color: black; }
+
+#block-menu-menu-spodn-textov-menu {
+  z-index: 3; }
+  #block-menu-menu-spodn-textov-menu ul.menu {
+    /*flexbox spodni komunikacni menu row container*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  #block-menu-menu-spodn-textov-menu ul li.leaf {
+    list-style-image: none; }
+  #block-menu-menu-spodn-textov-menu ul.menu > li {
+    /*flexbox spodni komunikacni menu row item*/
+    flex: 1 0 auto;
+    background-color: transparent;
+    padding: 4px; }
+  #block-menu-menu-spodn-textov-menu ul.menu > li a {
+    color: #bda1b3; }
+
+#main-wrapper {
+  /*flexbox page item*/
+  flex: 1 0 auto;
+  /*flexbox main content container*/
+  /*obsahuje left panel, main content a right panel vyrovnane v radku*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center; }
+
+#content-left {
+  /*flexbox main content item*/
+  flex: 0 0 16%;
+  order: 1;
+  height: 100%;
+  margin: 3em 3em 2em 0; }
+
+#content-middle {
+  /*flexbox main content item*/
+  flex: 2 1 70%;
+  order: 2;
+  height: 100%; }
+
+#content-right {
+  /*flexbox main content item*/
+  flex: 0 0 16%;
+  order: 3;
+  /*flexbox right content column container*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: left;
+  vertical-align: top;
+  margin: 3em 0 2em 3em; }
+
+.region-content-right {
+  /*flexbox right content column item 1*/
+  flex: 1 0 auto;
+  order: 1; }
+
+#spodni-textove-menu {
+  /*flexbox right content column item 2*/
+  flex: 0 0 auto;
+  order: 2; }
+
+.content {
+  font-size: 19px; }
+
+.columnContent {
+  text-align: center; }
+
+/*nasledujici media queries resi jen velikost vodoznaku, elegantnejsi reseni vitano!!*/
+@media only screen and (max-width: 1024px) {
+  #main-content {
+    background-size: 55%; } }
+@media only screen and (min-width: 1025px) and (max-width: 1299px) {
+  #main-content {
+    background-size: 40%; } }
+@media only screen and (min-width: 1300px) and (max-width: 1679px) {
+  #main-content {
+    background-size: 30%; } }
+@media only screen and (min-width: 1680px) {
+  #main-content {
+    background-size: 15%; } }
+#main-content {
+  text-align: justify;
+  min-height: 586px;
+  padding: 40px 1em 0 1em;
+  background-image: url("../img/vodoznak.png");
+  background-color: rgba(255, 255, 255, 0.2);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 8px 12px 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 12px 10px rgba(255, 255, 255, 0.2);
+  z-index: 2; }
+
+#content-right > .section {
+  height: 100%; }
+
+.view-content > .view-grouping {
+  margin-top: 40px; }
+
+.view-grouping-header {
+  font: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold; }
+
+.view-grouping-header a {
+  font: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: bold; }
+
+.leftnav {
+  float: left;
+  text-align: left; }
+
+.rightnav {
+  float: right;
+  text-align: right; }
+
+.leftnav a, .rightnav a {
+  font-size: 24px; }
+
+/*
+paticka je soucasti flexbox systemu stranky
+*/
+#footer {
+  /*flexbox header item*/
+  flex: 0 0 auto;
+  order: 3;
+  width: 100%;
+  margin: 2em 0 0 0;
+  align-self: flex-end;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1; }
+
+#footerWrapper {
+  width: 71%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center; }
+
+#footer a {
+  color: rgba(255, 255, 255, 0.8); }
+
+#footer .section {
+  display: inline-block;
+  padding: 20px 20px 20px 20px; }
+
+p {
+  font-family: Calibri, Candara, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+a {
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none; }
+
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+a:active {
+  color: white;
+  font-weight: bold;
+  text-decoration: none; }
+
+.active a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none; }
+
+li a.active {
+  color: white;
+  font-weight: bold;
+  text-decoration: none; }
+
+a:visited {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none; }
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 20px 0; }
+
+h1.title {
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold; }
+
+h2 a {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold; }
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold; }
+
+h3 a {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold; }
+
+h4 {
+  /*OL format*/
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  vertical-align: baseline;
+  margin-bottom: 10px; }
+
+.h2center .pane-title h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 20px 0; }
+
+.fieldset-title, .fieldset-title a {
+  font-family: Calibri, Candara, Arial, sans-serif;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  font-size: 1.4em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold; }
+
+.marker {
+  color: rgba(195, 0, 227, 0.9); }
+
+/*PANELY A SEKCE*/
+.seznam-kapitol {
+  padding: 10px 10px 10px 10px; }
+  .seznam-kapitol h3 {
+    margin-bottom: 20px; }
+  .seznam-kapitol h3 a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em; }
+  .seznam-kapitol a {
+    padding-left: 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em; }
+
+.seznam-postav {
+  padding: 10px 10px 10px 10px; }
+  .seznam-postav h3 {
+    margin: 40px 0 10px 26px; }
+  .seznam-postav h3:first-of-type {
+    margin: 0 0 10px 26px; }
+  .seznam-postav h3 a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em; }
+  .seznam-postav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em; }
+
+.jmenoAutora {
+  font-size: 1.2em;
+  font-family: Helvetica, Arial, sans-serif; }
+
+.prijmeniAutora {
+  font-size: 1.2em;
+  font-family: Helvetica, Arial, sans-serif; }
+
+div .comment {
+  /*komentar u obsahu*/
+  border: 1px solid #be97bf;
+  min-height: 3em;
+  max-width: 60vw;
+  overflow: hidden; }
+
+.indented > .comment {
+  /*komentar reagujici na komentar*/
+  margin-left: 2em; }
+
+.commentHead {
+  /*hlavicka normalniho komentare$*/
+  background-color: rgba(22, 22, 22, 0.1);
+  border: 1px solid #be97bf;
+  padding: 0.2em; }
+  .commentHead .commentDate {
+    position: relative;
+    float: right; }
+
+.commentContent {
+  min-height: 2em;
+  padding: 0.4em 0.8em;
+  word-wrap: normal;
+  white-space: normal; }
+
+.comment-new .commentHead {
+  /*hlavicka noveho komentare*/
+  background-color: rgba(195, 0, 227, 0.9); }
+
+.commentUserIcon {
+  /*uzivatelska ikona v komentarich je obtekana obsahem zprava*/
+  position: relative;
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 0.6em 0.5em 0.5em 1em; }
+
+.commentFooter {
+  min-height: 1em;
+  clear: both;
+  margin: 0.6em 0.8em; }
+  .commentFooter .commentChange {
+    position: relative;
+    float: left; }
+  .commentFooter .commentLinks {
+    position: relative;
+    float: right; }
+    .commentFooter .commentLinks ul.inline li a {
+      padding-left: 1.2em;
+      margin-right: 0.1em;
+      background-position: center left;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .commentFooter .commentLinks ul.inline li.comment-delete a {
+      background-image: url("../img/commentIcons/delete_h60.png"); }
+    .commentFooter .commentLinks ul.inline li.comment-edit a {
+      background-image: url("../img/commentIcons/edit_h60.png"); }
+    .commentFooter .commentLinks ul.inline li.comment-reply a {
+      background-image: url("../img/commentIcons/reply_h60.png"); }
+
+/*EDITOR A KOMENTAROVE VECI K EDITORU*/
+.commentEditorWrapper {
+  padding: 1em;
+  margin-bottom: 2em; }
+  .commentEditorWrapper .use-ajax-comments {
+    float: right;
+    background-image: url("../img/commentIcons/comment_h60.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    padding-left: 1.2em; }
+
+/*zprava o nutnosti se registrovat nebo prihlasit pro pridavani komentaru - nahrazuje drupal links comments forbidden*/
+.commentForbidden {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.8em; }
+  .commentForbidden a {
+    font-size: inherit; }
+
+/*intercom, zpravy a souvisejici veci*/
+/*zobrazeni zprav*/
+.private-message {
+  /**/
+  border: 1px solid #be97bf;
+  min-height: 3em;
+  overflow: hidden;
+  /*default value overrider*/
+  max-width: none; }
+
+.messageHead {
+  /*hlavicka normalni zpravy*/
+  height: 1em;
+  background-color: rgba(22, 22, 22, 0.1);
+  border: 1px solid #be97bf;
+  padding: 0.2em; }
+  .messageHead .messageAuthor {
+    position: relative;
+    float: left; }
+  .messageHead .messageDate {
+    position: relative;
+    float: right; }
+
+.messageHead.new {
+  /*hlavicka nove zpravy*/
+  background-color: rgba(195, 0, 227, 0.9); }
+
+.messageUserIcon {
+  /*uzivatelska ikona ve zpravach je obtekana obsahem zprava*/
+  position: relative;
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 0.6em 0.5em 0.5em 1em; }
+
+.messageContent {
+  min-height: 2em;
+  padding: 0.4em 0.8em;
+  word-wrap: normal;
+  white-space: normal; }
+
+.messageFooter {
+  position: relative;
+  float: right;
+  clear: both;
+  min-height: 1em;
+  margin: 0.6em 0.8em; }
+  .messageFooter .messageDelete {
+    display: inline; }
+  .messageFooter .messageReply {
+    display: inline; }
+  .messageFooter ul.inline li a {
+    padding-left: 1.2em;
+    margin-right: 0.1em;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .messageFooter ul.inline li.comment-delete a {
+    background-image: url("../img/commentIcons/delete_h60.png"); }
+  .messageFooter ul.inline li.comment-edit a {
+    background-image: url("../img/commentIcons/edit_h60.png"); }
+  .messageFooter ul.inline li.comment-reply a {
+    background-image: url("../img/commentIcons/reply_h60.png"); }
+
+/*inbox message list styl*/
+.inbox, .outbox {
+  width: 100%;
+  margin-top: 2em; }
+  .inbox table, .outbox table {
+    width: 100%; }
+  .inbox tr, .outbox tr {
+    background-color: transparent; }
+    .inbox tr tr.even, .outbox tr tr.even {
+      background-color: inherit; }
+    .inbox tr tr.odd, .outbox tr tr.odd {
+      background-color: inherit; }
+    .inbox tr th, .outbox tr th {
+      font-size: 19px;
+      padding-bottom: 0.5em;
+      color: black;
+      font-weight: bold;
+      font-family: Helvetica, Arial, sans-serif; }
+    .inbox tr th a, .outbox tr th a {
+      font-size: 19px;
+      color: inherit;
+      font-weight: inherit;
+      font-family: inherit; }
+    .inbox tr th a:hover, .outbox tr th a:hover {
+      color: inherit;
+      font-weight: inherit;
+      font-family: inherit; }
+  .inbox tr.privatemsg-unread, .outbox tr.privatemsg-unread {
+    /* background-color: $messageNewBG !important;*/ }
+  .inbox td, .outbox td {
+    background-color: inherit; }
+
+#privatemsg-new {
+  /*tlacitko odeslat*/
+  /*tlacitko smazat / zrusit / cerveny X*/ }
+  #privatemsg-new #edit-actions {
+    /*zmeni kurzor na pointer*/
+    cursor: pointer;
+    /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/ }
+    #privatemsg-new #edit-actions input, #privatemsg-new #edit-actions a[id^="edit"] {
+      height: 60px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: auto 50px;
+      /*Askaru chtel tyhle ikonky o neco mensi*/
+      /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
+      margin-right: 20px;
+      /*balanc a destylizace input button stylu*/
+      padding-left: 42px;
+      border: none;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 19px;
+      font-family: Calibri, Candara, Arial, sans-serif; }
+    #privatemsg-new #edit-actions input:hover, #privatemsg-new #edit-actions a[id^="edit"]:hover {
+      color: white; }
+  #privatemsg-new input[id^="edit-submit"] {
+    background-image: url("../img/messageIcons/sendMessage_h60.png"); }
+  #privatemsg-new input[id^="edit-cancel"], #privatemsg-new a[id^="edit-cancel"] {
+    background-image: url("../img/messageIcons/cancelMessage_h60.png"); }
+
+/*OSTATNI*/
+/*obsahuje styl pro systemove zpravy, dialogy a take formulare a tlacitka*/
+#comment-confirm-delete {
+  text-align: center;
+  padding: 1em; }
+
+/*TLACITKA FORMULARU*/
+#edit-actions, #edit-actions--2, .form-actions {
+  /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/ }
+  #edit-actions input, #edit-actions a[id^="edit"], #edit-actions--2 input, #edit-actions--2 a[id^="edit"], .form-actions input, .form-actions a[id^="edit"] {
+    height: 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
+    /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
+    margin-right: 20px;
+    /*balanc a destylizace input button stylu*/
+    padding: 1em 0 1em 50px;
+    border: none;
+    /*linkizace textu*/
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 19px;
+    /*zmeni kurzor na pointer*/
+    cursor: pointer; }
+  #edit-actions input:hover, #edit-actions a[id^="edit"]:hover, #edit-actions--2 input:hover, #edit-actions--2 a[id^="edit"]:hover, .form-actions input:hover, .form-actions a[id^="edit"]:hover {
+    color: white; }
+
+/*tlacitko upravit / ulozit / vlozit / OK / fajfka*/
+input[id^="edit-ajax-comments"], input[id^="edit-submit"] {
+  background-image: url("../img/commentIcons/ok_h60.png"); }
+
+/*tlacitko smazat / zrusit / cerveny X*/
+input[id^="cancel-ajax-comments"], input[id^="edit-cancel"], a[id^="edit-cancel"] {
+  background-image: url("../img/commentIcons/cancel_h60.png"); }
+
+/*Styly pro administraci, prekryvy, redakci atp...*/
+/*Override vychozich formularu - protoze to v motivu SP nevypada hezky*/
+.views-display-top {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #190b5d; }
+
+/*# sourceMappingURL=screen.css.map */

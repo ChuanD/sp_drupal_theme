@@ -1,0 +1,116 @@
+/* line 5, ../scss/vertical-tabs.scss */
+div.vertical-tabs {
+  margin: 1em 0 1em 15em;
+  /* LTR */
+  border: 1px solid #ccc;
+  position: relative;
+  /* IE6/7 */
+}
+
+/* line 10, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs-list {
+  width: 15em;
+  list-style: none;
+  list-style-image: none;
+  /* IE6 */
+  border-top: 1px solid #ccc;
+  padding: 0;
+  position: relative;
+  /* IE6 */
+  margin: -1px 0 -1px -15em;
+  /* LTR */
+  float: left;
+  /* LTR */
+}
+
+/* line 20, ../scss/vertical-tabs.scss */
+.vertical-tabs fieldset.vertical-tabs-pane {
+  margin: 0 !important;
+  padding: 0 1em;
+  border: 0;
+}
+
+/* line 25, ../scss/vertical-tabs.scss */
+fieldset.vertical-tabs-pane legend {
+  display: none;
+}
+
+/* line 28, ../scss/vertical-tabs.scss */
+fieldset.vertical-tabs-pane fieldset legend {
+  display: block;
+}
+
+/* Layout of each tab */
+/* line 33, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs-list li {
+  background: #555;
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  /* IE7 */
+}
+
+/* line 41, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs-list li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0.6em;
+}
+
+/* line 46, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs-list li a:focus strong,
+.vertical-tabs ul.vertical-tabs-list li a:active strong,
+.vertical-tabs ul.vertical-tabs-list li a:hover strong {
+  text-decoration: underline;
+}
+
+/* line 51, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs-list li a:hover {
+  outline: 1px dotted;
+}
+
+/* line 54, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs-list li.selected {
+  background-color: #222;
+  border-right-width: 0;
+  /* LTR */
+}
+
+/* line 58, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs-list .selected strong {
+  color: #ee2;
+  font-weight: bold;
+}
+
+/* line 62, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs-list .summary {
+  display: block;
+}
+
+/* line 65, ../scss/vertical-tabs.scss */
+.vertical-tabs ul.vertical-tabs ul.vertical-tabs-list .summary {
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+/**
+ * Prevent text inputs from overflowing when container is too narrow. "width" is
+ * applied to override hardcoded cols or size attributes and used in conjunction
+ * with "box-sizing" to prevent box model issues from occurring in most browsers.
+*/
+/* line 75, ../scss/vertical-tabs.scss */
+.vertical-tabs .form-type-textfield input {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 81, ../scss/vertical-tabs.scss */
+* html .vertical-tabs .form-type-textfield,
+* html .vertical-tabs .form-textarea-wrapper {
+  width: 95%;
+  /* IE6 */
+}

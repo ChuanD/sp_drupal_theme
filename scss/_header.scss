@@ -1,0 +1,224 @@
+/*hlavicka a slogan az do main contentu*/
+#header {
+  /*flexbox page item*/
+  flex: 1;
+  width: 100%;
+  min-height: 237px;
+
+  /*flexbox header container*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  /*pozadi cele hlavicky*/
+  text-align: center;
+  background-image: url("../img/headerbg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  /*cover nebo contain? Tradicni dilema...*/
+  background-size: cover;
+}
+
+#header-left {
+  /*flexbox header item*/
+  flex: 1;
+  order: 1;
+
+  text-align: left;
+}
+
+#header-left-motto {
+  height: 2em;
+  padding: 0.2em;
+}
+
+#header-left-content {
+  text-align: left;
+  padding: 8px 8px 8px 0;
+
+  background-color: $headerBoxBG;
+  height: 100px;
+}
+
+.headerProfile {
+  width: 100%;
+  height: 100%;
+
+  .headerFlex {
+    /*header profile infoFlexBox container*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .headerProfileCol:first-child {
+    /*header profile infoFlexBox item*/
+    flex: 0 0;
+    order: 1;
+    width: 100px;
+  }
+  .headerProfileCol:nth-child(2) {
+    flex: 1 1;
+    order: 2;
+  }
+  .headerProfileCol {
+    /*header profile*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .headerUserPicture {
+      width: 100px;
+      flex: 0 0;
+      order: 1;
+    }
+
+    .headerUsername {
+      flex: 1 1;
+      order: 2;
+
+      color: $H2DarkColor;
+      font-family: $BoldHeaderFont;
+      font-size: 1.1em;
+      overflow: hidden;
+      vertical-align: top;
+      text-align: center;
+      padding-top: 0;
+      padding-bottom: 4px;
+      padding-left: 8px;
+    }
+
+    .actionlinkField {
+      flex: 0 1;
+      order: 5;
+      text-align: right;
+
+    }
+
+    .actionlink {
+    }
+
+    a.actionlink, a.actionlink:visited {
+      color: $H2DarkColor;
+      font-size: $UserBoxFontSize;
+      font-weight: bold;
+      text-decoration: none;
+      padding-left: 10px;
+
+    }
+  }
+}
+
+#block-block-1 {
+  //kazdy pribeh ma zacatek / motto
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  color: #fff;
+}
+
+#header-left
+/*tohle dela background k headerboxu... jenze je to konkretni view, takze treba anonymni profil je bez backgroundu, OPRAVIT!!!!*/
+/*moznosti:
+- region last?
+- multiple ids?
+- restrukturalizace?
+- panelizace?
+*/
+                          #block-views-view-logged-user-block {
+
+}
+
+.views-field-picture .field-content img {
+  vertical-align: top;
+}
+
+#header-middle {
+  flex: 2;
+  order: 2;
+
+  text-align: center;
+  /*logo nesmi kolidovat s pozadim*/
+  margin-top: -12px;
+}
+
+#header-langselect {
+  height: 2em;
+  padding: 0.2em;
+  text-align: center;
+
+}
+
+#block-locale-language {
+  /*inline radek v right header nad user menu – vlajecky a reg/login*/
+  display: inline-block;
+
+  /*vizualni kompenzator textu - leveho motta: */
+  margin-top: 0.25em;
+
+}
+
+#block-block-6 {
+  /*inline radek v right header nad user menu – vlajecky a reg/login*/
+  display: inline-block;
+}
+
+.language-switcher-locale-url img.language-icon {
+  border: 1px solid $linkColor;
+  padding: 0;
+}
+
+.language-switcher-locale-url img.language-icon:hover {
+  border: 1px solid #fff;
+  padding: 0;
+}
+
+#block-block-6 {
+  padding-left: 10px;
+}
+
+#header-langselect li, #block-locale-language li {
+  display: inline-block;
+}
+
+#header-right {
+  /*flexbox header item*/
+  flex: 1;
+  order: 3;
+
+  vertical-align: bottom;
+  /*padding: 2% 0 2% 1%;*/
+}
+
+.region-header-langselect {
+  /*child of header-langselect*/
+}
+
+.region-header-right {
+  height: 100px;
+  padding: 8px 0 8px 8px;
+  background-color: $headerBoxBG;
+}
+
+#name-and-slogan {
+  /*page flex item*/
+  flex: 0 0 auto;
+  height: 1em;
+  width: 100%;
+
+  margin-top: -10px;
+  padding: 0 0 10px 0;
+  text-align: center;
+
+  font-family: $headingFont;
+  background-color: $sloganSeparatorBGC;
+  color: $sloganSeparatorTC;
+}
+
+#header-slogan {
+  height: 1em;
+  width: 20%;
+  margin: 0 auto;
+  padding: 0 0 0 3.4em; //kompeanzuje divnou asymetrii motivu a posouva motto pod okridleneho lva aby to vypadalo centrovane.
+  font-size: 20px;
+}

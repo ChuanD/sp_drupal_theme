@@ -1,0 +1,177 @@
+/*intercom, zpravy a souvisejici veci*/
+/*zobrazeni zprav*/
+.private-message {
+  /**/
+  border: 1px solid $messageBG2;
+  min-height: 3em;
+  overflow: hidden;
+
+  /*default value overrider*/
+  max-width: none;
+}
+
+.messageHead {
+  /*hlavicka normalni zpravy*/
+  height: 1em;
+
+  background-color: $messageBG1;
+  border: 1px solid $messageBG2;
+
+  padding: 0.2em;
+  .messageAuthor {
+    position: relative;
+    float: left;
+  }
+  .messageDate {
+    position: relative;
+    float: right;
+  }
+}
+
+.messageHead.new {
+  /*hlavicka nove zpravy*/
+  background-color: $commentsNewBG;
+}
+
+.messageUserIcon {
+  /*uzivatelska ikona ve zpravach je obtekana obsahem zprava*/
+  position: relative;
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 0.6em 0.5em 0.5em 1em;
+}
+
+.messageContent {
+  min-height: 2em;
+  padding: 0.4em 0.8em;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.messageFooter {
+  position: relative;
+  float: right;
+  clear: both;
+
+  min-height: 1em;
+  margin: 0.6em 0.8em;
+  .messageDelete {
+    display: inline;
+  }
+  .messageReply {
+    display: inline;
+  }
+
+  ul.inline {
+    li a {
+      padding-left: 1.2em;
+      margin-right: 0.1em;
+
+      background-position: center left;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    li.comment-delete a {
+      background-image: url("../img/commentIcons/delete_h60.png");
+    }
+
+    li.comment-edit a {
+      background-image: url("../img/commentIcons/edit_h60.png");
+    }
+    li.comment-reply a {
+      background-image: url("../img/commentIcons/reply_h60.png");
+    }
+  }
+
+}
+
+/*inbox message list styl*/
+.inbox, .outbox {
+  width: 100%;
+  margin-top: 2em;
+  table {
+    width: 100%;
+  }
+
+  tr {
+    background-color: transparent;
+
+    tr.even {
+      background-color: inherit;
+    }
+    tr.odd {
+      background-color: inherit;
+    }
+    th {
+      font-size: $buttonFontSize;
+      padding-bottom: 0.5em;
+
+      color: black;
+      font-weight: bold;
+      font-family: $headingFont;
+    }
+    th a {
+      font-size: $buttonFontSize;
+
+      color: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+    }
+    th a:hover {
+      color: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+    }
+  }
+  tr.privatemsg-unread {
+    /* background-color: $messageNewBG !important;*/
+  }
+  td {
+    background-color: inherit;
+  }
+}
+
+#privatemsg-new {
+
+  #edit-actions {
+    /*zmeni kurzor na pointer*/
+    cursor: pointer;
+
+    /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/
+    input, a[id^="edit"] {
+      height: 60px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: auto 50px;
+      /*Askaru chtel tyhle ikonky o neco mensi*/
+
+      /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
+      margin-right: 20px;
+
+      /*balanc a destylizace input button stylu*/
+      padding-left: 42px;
+      border: none;
+
+      color: $linkColor;
+      font-size: $buttonFontSize;
+      font-family: $normalfont;
+    }
+    input:hover, a[id^="edit"]:hover {
+      color: $linkColorHover;
+    }
+  }
+
+  /*tlacitko odeslat*/
+  input[id^="edit-submit"] {
+    background-image: url("../img/messageIcons/sendMessage_h60.png");
+  }
+
+  /*tlacitko smazat / zrusit / cerveny X*/
+  input[id^="edit-cancel"], a[id^="edit-cancel"] {
+    background-image: url("../img/messageIcons/cancelMessage_h60.png");
+  }
+}
+

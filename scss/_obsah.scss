@@ -1,0 +1,143 @@
+#main-wrapper {
+  /*flexbox page item*/
+  flex: 1 0 auto;
+  /*flexbox main content container*/
+  /*obsahuje left panel, main content a right panel vyrovnane v radku*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  text-align: center;
+}
+
+#content-left {
+  /*flexbox main content item*/
+  flex: 0 0 16%;
+  order: 1;
+  height: 100%;
+  margin: 3em 3em 2em 0;
+}
+
+#content-middle {
+  /*flexbox main content item*/
+  flex: 2 1 70%;
+  order: 2;
+  height: 100%;
+
+}
+
+#content-right {
+  /*flexbox main content item*/
+  flex: 0 0 16%;
+  order: 3;
+
+  /*flexbox right content column container*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: stretch;
+
+  text-align: left;
+  vertical-align: top;
+  margin: 3em 0 2em 3em;
+}
+
+.region-content-right {
+  /*flexbox right content column item 1*/
+  flex: 1 0 auto;
+  order: 1;
+}
+
+#spodni-textove-menu {
+  /*flexbox right content column item 2*/
+  flex: 0 0 auto;
+  order: 2;
+
+}
+
+#highlighted {
+}
+
+.content {
+  font-size: $NormalFontSize;
+}
+
+.columnContent {
+  text-align: center;
+}
+
+/*nasledujici media queries resi jen velikost vodoznaku, elegantnejsi reseni vitano!!*/
+@media only screen and (max-width: 1024px) {
+  #main-content {
+    background-size: 55%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1299px) {
+  #main-content {
+    background-size: 40%;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1679px) {
+  #main-content {
+    background-size: 30%;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  #main-content {
+    background-size: 15%;
+  }
+}
+
+#main-content {
+  text-align: justify;
+  min-height: 586px;
+
+  padding: 40px 1em 0 1em; //posunutí obsahu pod menu
+
+  background-image: url("../img/vodoznak.png");
+  background-color: $contentBGColor;
+  background-position: center center;
+
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 8px 12px 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 12px 10px rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+#content-right > .section {
+  height: 100%;
+}
+
+.view-content > .view-grouping {
+  margin-top: 40px;
+}
+
+.view-grouping-header {
+  font: $headingFont;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.view-grouping-header a {
+  font: $headingFont;
+  font-size: $NormalFontSize;
+  font-weight: bold;
+}
+
+.leftnav {
+  float: left;
+  text-align: left;
+}
+
+.rightnav {
+  float: right;
+  text-align: right;
+}
+
+.leftnav a, .rightnav a {
+  font-size: 24px;
+}

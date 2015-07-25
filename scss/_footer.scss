@@ -1,0 +1,44 @@
+/*
+paticka je soucasti flexbox systemu stranky
+*/
+#footer {
+  /*flexbox header item*/
+  flex: 0 0 auto;
+  order: 3;
+  width: 100%;
+
+  margin: 2em 0 0 0;
+  align-self: flex-end;
+  text-align: center;
+
+  color: $DarkLightText;
+  z-index: 1;
+}
+
+#footerWrapper {
+  width: 71%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#footer a {
+  color: $DarkLightText;
+}
+
+#footer .section {
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+}
+
+#footer > .section.left {
+
+}
+
+#footer > .section.center {
+
+}
+
+#footer > .section.right {
+
+}

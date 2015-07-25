@@ -1,0 +1,92 @@
+ul li.leaf {
+  list-style-image: url('../img/packa.png');
+  list-style-position: inside;
+}
+
+.tabs {
+  ul.primary {
+    text-align: center;
+    white-space: initial;
+  }
+}
+
+/*MENU PRAVEHO SLOUPCE*/
+#content-right {
+  .menu {
+    li {
+      background-color: $secMenuBG1;
+    }
+  }
+}
+
+ul.menu > li {
+  background-color: $menuBG1;
+  padding: 4px;
+  margin-bottom: 14px;
+}
+
+ul.menu > li > a {
+  color: $menuFontColor;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#block-menu-menu-toprightusermenu {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#block-menu-menu-toprightusermenu h2 {
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px solid $darkText;
+}
+
+#block-menu-menu-toprightusermenu li {
+  text-align: center;
+  background: none;
+  margin-bottom: 0;
+}
+
+#block-menu-menu-toprightusermenu {
+  /*administrace a nastaveni, dva odkazy v pravem hornim menu*/
+  li.first {
+    list-style-image: url("../img/menuicons/fajfka.png");
+  }
+  li.last {
+    list-style-image: url("../img/menuicons/obalka.png");
+  }
+  li.first.last{
+    list-style-image: url("../img/menuicons/fajfka.png");
+  }
+}
+
+#block-menu-menu-toprightusermenu li a {
+  color: $darkText;
+}
+
+#block-menu-menu-spodn-textov-menu {
+  z-index: 3;
+
+  ul.menu {
+    /*flexbox spodni komunikacni menu row container*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  ul li.leaf {
+    list-style-image: none;
+  }
+  ul.menu > li {
+    /*flexbox spodni komunikacni menu row item*/
+    flex: 1 0 auto;
+
+    background-color: transparent;
+    padding: 4px;
+  }
+  ul.menu > li a {
+    color: $helpMenuColor;
+  }
+}

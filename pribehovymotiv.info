@@ -1,0 +1,37 @@
+name = Motiv světa příběhů
+description = Motiv světa příběhů vytvořený na míru pro tento web
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = stylesheets/screen.css
+stylesheets[all][] = stylesheets/system.menus.css
+stylesheets[all][] = stylesheets/vertical-tabs.css
+stylesheets[print][] = stylesheets/print.css
+stylesheets[ie][] = stylesheets/ie.css
+
+regions[header_left_motto] = Header left motto
+regions[header_left] = Header left
+regions[header_middle] = Header middle
+regions[header_langselect] = Header language select
+regions[header_right] = Header right
+regions[main_navigation] = Top main navigation
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[content_left] = Content left
+regions[highlighted] = Highlighted content
+regions[content] = Content
+regions[content_right] = Content right
+regions[spodni_textove_menu] = Spodní textové menu
+regions[sidebar_second_bottom] = Sidebar second bottom
+regions[footer_left] = Footer left
+regions[footer] = Footer center
+regions[footer_right] = Footer right
+
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+
+plugins[advanced_forum][styles] = 'forum_pribehu'

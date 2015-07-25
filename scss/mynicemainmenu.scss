@@ -1,0 +1,239 @@
+/*
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+/******************************
+ Global CSS for ALL menu types
+******************************/
+@import "vlastnosti";
+@import "ikonky";
+
+#block-nice-menus-1 {
+}
+
+.content #nice-menu-1 {
+}
+
+#nice-menu-1, #nice-menu-2 {
+  /*main menu flex container*/
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+
+  width: 100%;
+  height: 1.8em;
+  //background-color: $ulBG1;
+  background: $menuBG0;
+  margin-top: 2px; //blur+black stripe fix
+  padding: 6px 0 6px 4px;
+  text-align: justify;
+
+  -webkit-box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1);
+  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 1);
+}
+
+#nice-menu-1:after, #nice-menu-2:after {
+  /*tohle nebude potreba*/
+  display: none;
+  content: '';
+}
+
+#nice-menu-1 > li, #nice-menu-2 > li {
+  /*main menu flex item level 0*/
+  flex: 1 1 auto;
+
+  min-width: 4em;
+  max-width: 8em;
+
+  text-align: center;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  -webkit-box-shadow: -3px 3px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px 3px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: -3px 3px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+#nice-menu-1 li a.active, #nice-menu-2 li a.active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#nice-menu-1 > li > ul, #nice-menu-2 > li > ul {
+  /*main menu level 1*/
+  min-width: 4em;
+  max-width: 8em;
+}
+
+#nice-menu-1 li li, #nice-menu-2 li li {
+  min-width: 4em;
+  max-width: 8em;
+
+  text-align: center;
+
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#nice-menu-1 li li ul, #nice-menu-2 li li ul {
+  /*napr menu pribehu ve svete dejove linie / ruzne info, L 2/3*/
+  width: 180px;
+}
+
+#nice-menu-1 li li li ul, #nice-menu-2 li li li ul {
+  /*napr kapitolz dejove linie, L 3/4*/
+  min-width: 180px;
+}
+
+/*
+#nice-menu-1 li li li, #nice-menu-2 li li li {
+}
+*/
+#block-nice-menus-1 li a, #block-nice-menus-2 li a {
+
+  display: inline-block;
+  color: $menuFontColor;
+  text-decoration: none;
+  font-family: $headingFont;
+  font-weight: bold;
+}
+
+ul.nice-menu,
+ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.nice-menu li {
+  border-top: 0;
+  /*float: left; /* LTR */
+  background-color: $menuBG1;
+}
+
+ul.nice-menu a {
+  padding: 0.3em 0 0.3em 5px;
+}
+
+ul.nice-menu ul {
+  top: 1.8em;
+  left: -1px; /* LTR */
+  border: 0;
+  margin-right: 0; /* LTR */
+}
+
+ul.nice-menu ul li {
+  width: 12.5em;
+}
+
+/******************************
+ VERTICAL (left/right) menus
+******************************/
+
+/* This is the default width of all vertical menus. */
+ul.nice-menu-right,
+ul.nice-menu-left,
+ul.nice-menu-right li,
+ul.nice-menu-left li {
+  width: 12.5em;
+}
+
+/* VERTICAL menus where submenus pop RIGHT (default). */
+ul.nice-menu-right ul {
+  width: 12.5em;
+  left: 12.5em;
+  top: -1px;
+}
+
+ul.nice-menu-right ul ul {
+  width: 12.5em;
+  left: 12.5em;
+  top: -1px;
+}
+
+ul.nice-menu-right li.menuparent,
+ul.nice-menu-right li li.menuparent {
+  // background: #eee url("../images/arrow-right.png") right center no-repeat;
+}
+
+ul.nice-menu-right li.menuparent:hover,
+ul.nice-menu-right li li.menuparent:hover {
+  //background: #ccc url("../images/arrow-right.png") right center no-repeat;
+}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
+  float: left; /* LTR */
+  border: 0;
+}
+
+ul.nice-menu-down li {
+  /* border-top: 1px solid #ccc;*/
+}
+
+ul.nice-menu-down li li {
+  border-top: 0;
+}
+
+ul.nice-menu-down ul {
+  left: 0; /* LTR */
+}
+
+ul.nice-menu-down ul li {
+  clear: both;
+}
+
+ul.nice-menu-down li ul li ul {
+  left: 99%; /* LTR */
+  top: 0;
+}
+
+ul.nice-menu-down .menuparent a {
+  /*padding-right: 15px; /* LTR */
+}
+
+ul.nice-menu-down li.menuparent {
+  /* LTR */
+  //level0 kdyz ma submenu
+}
+
+ul.nice-menu-down li.menuparent:hover {
+  //background: $menuBG1 url("../images/arrow-down.png") right center no-repeat; /* LTR */
+  //level0 kdyz ma submenu
+}
+
+ul.nice-menu-down li li {
+  background: $menuBG1; /* LTR */
+}
+
+ul.nice-menu-down li li:hover {
+  background: $menuBG2; /* LTR */
+}
+
+ul.nice-menu-down li li li {
+  background: $menuBG2; /* LTR */
+}
+
+ul.nice-menu-down li li li:hover {
+  background: $menuBG3; /* LTR */
+}
+
+ul.nice-menu-down li li li li {
+  background: $menuBG3; /* LTR */
+}
+
+ul.nice-menu-down li li li li:hover {
+  background: $menuBG4; /* LTR */
+}

@@ -1,0 +1,115 @@
+div .comment {
+  /*komentar u obsahu*/
+  border: 1px solid $commentsBG2;
+  min-height: 3em;
+  max-width: 60vw;
+  overflow: hidden;
+}
+
+.indented > .comment {
+  /*komentar reagujici na komentar*/
+  margin-left: 2em;
+}
+
+.commentHead {
+  /*hlavicka normalniho komentare$*/
+  background-color: $commentsBG1;
+  border: 1px solid $commentsBG2;
+  padding: 0.2em;
+  .commentAuthor {
+
+  }
+  .commentDate {
+    position: relative;
+    float: right;
+  }
+
+}
+
+.commentContent {
+  min-height: 2em;
+  padding: 0.4em 0.8em;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.comment-new .commentHead {
+  /*hlavicka noveho komentare*/
+  background-color: $commentsNewBG;
+}
+
+.commentUserIcon {
+  /*uzivatelska ikona v komentarich je obtekana obsahem zprava*/
+  position: relative;
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 0.6em 0.5em 0.5em 1em;
+}
+
+.commentFooter {
+  min-height: 1em;
+  clear: both;
+  margin: 0.6em 0.8em;
+
+  .commentChange {
+    position: relative;
+    float: left;
+  }
+  .commentLinks {
+    position: relative;
+    float: right;
+
+    ul.inline {
+      li a {
+        padding-left: 1.2em;
+        margin-right: 0.1em;
+
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      li.comment-delete a {
+        background-image: url("../img/commentIcons/delete_h60.png");
+      }
+
+      li.comment-edit a {
+        background-image: url("../img/commentIcons/edit_h60.png");
+      }
+      li.comment-reply a {
+        background-image: url("../img/commentIcons/reply_h60.png");
+      }
+    }
+  }
+}
+
+/*EDITOR A KOMENTAROVE VECI K EDITORU*/
+.commentEditorWrapper {
+  padding: 1em;
+  margin-bottom: 2em;
+
+  .use-ajax-comments {
+    //TODO overit ze v tomhle neni konflikt s comment reply, protoze tohle ma byt jen na moznost pridat komentar
+    float: right;
+
+    background-image: url("../img/commentIcons/comment_h60.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    line-height: 1.4em;
+    font-size: 1.2em;
+    padding-left: 1.2em;
+  }
+}
+
+/*zprava o nutnosti se registrovat nebo prihlasit pro pridavani komentaru - nahrazuje drupal links comments forbidden*/
+.commentForbidden {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.8em;
+  a {
+    font-size: inherit;
+  }
+}

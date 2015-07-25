@@ -1,0 +1,44 @@
+/*obsahuje styl pro systemove zpravy, dialogy a take formulare a tlacitka*/
+
+#comment-confirm-delete {
+  text-align: center;
+  padding: 1em;
+}
+
+/*TLACITKA FORMULARU*/
+#edit-actions, #edit-actions--2, .form-actions {
+  /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/
+  input, a[id^="edit"] {
+    height: 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
+    margin-right: 20px;
+
+    /*balanc a destylizace input button stylu*/
+    padding: 1em 0 1em 50px;
+    border: none;
+
+    /*linkizace textu*/
+    color: $linkColor;
+    font-size: $buttonFontSize;
+
+    /*zmeni kurzor na pointer*/
+    cursor: pointer;
+  }
+  input:hover, a[id^="edit"]:hover {
+    color: $linkColorHover;
+  }
+}
+
+/*tlacitko upravit / ulozit / vlozit / OK / fajfka*/
+input[id^="edit-ajax-comments"], input[id^="edit-submit"] {
+  background-image: url("../img/commentIcons/ok_h60.png");
+}
+
+/*tlacitko smazat / zrusit / cerveny X*/
+input[id^="cancel-ajax-comments"], input[id^="edit-cancel"], a[id^="edit-cancel"] {
+  background-image: url("../img/commentIcons/cancel_h60.png");
+}

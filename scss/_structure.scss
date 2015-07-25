@@ -1,0 +1,91 @@
+/*
+Layout a struktura,
+hlavní oddíly stránky,
+základní funkční prvky,
+rozhodně kritické CSS
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #8c346e;
+  @include filter-gradient(#6d4b6d, #8c346e, vertical);
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top, #6d4b6d 0%, #6d4b6d 31%, #755071 35%, #764e73 36%, #765071 36%, #9a6389 51%, #a5668e 59%, #a5628d 67%, #a25b89 72%, #8f3771 91%, #8e3971 92%, #8e3671 92%, #8c346e 95%, #8c346e 100%));
+  background-repeat: no-repeat;
+  font-family: $normalfont;
+}
+
+#tinymce {
+  background: #cccccc;
+}
+
+#page {
+  /*top level flex container*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  overflow: hidden;
+  width: 100%;
+
+  background-image: url("../img/bottombg.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+#main p {
+  text-indent: 50px;
+}
+
+div.node {
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.content, .view-content, .view-content > div {
+  width: 100%;
+  height: 100%;
+}
+
+ol {
+  margin-bottom: 20px;
+
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ol li {
+  font-weight: normal;
+}
+
+ol ol {
+  padding-left: 2em;
+  list-style-type: lower-alpha;
+}
+
+ol ol li {
+  text-indent: -1em;
+}
+
+ol ol ol {
+  padding-left: 2em;
+  list-style-type: lower-roman;
+}
+
+ol ol ol li {
+  text-indent: -1em;
+}
+
+fieldset {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.rozcestnipolozka {
+  margin-bottom: 20px;
+}
