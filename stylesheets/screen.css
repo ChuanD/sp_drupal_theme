@@ -189,7 +189,7 @@ fieldset {
       flex: 0 0;
       order: 1; }
     .headerProfile .headerProfileCol .headerUsername {
-      flex: 1 1;
+      flex: 1 1 1em;
       order: 2;
       color: black;
       font-family: "PT Sans", sans-serif;
@@ -662,6 +662,8 @@ div .comment {
   background-color: rgba(22, 22, 22, 0.1);
   border: 1px solid #be97bf;
   padding: 0.2em; }
+  .commentHead .commentAuthor a {
+    color: #000000; }
   .commentHead .commentDate {
     position: relative;
     float: right; }
@@ -799,6 +801,12 @@ div .comment {
   margin-top: 2em; }
   .inbox table, .outbox table {
     width: 100%; }
+  .inbox thead, .outbox thead {
+    border-bottom: 2px solid #000000; }
+  .inbox tbody:before, .outbox tbody:before {
+    content: '';
+    display: block;
+    height: 0.3em; }
   .inbox tr, .outbox tr {
     background-color: transparent; }
     .inbox tr tr.even, .outbox tr tr.even {
@@ -807,7 +815,6 @@ div .comment {
       background-color: inherit; }
     .inbox tr th, .outbox tr th {
       font-size: 19px;
-      padding-bottom: 0.5em;
       color: black;
       font-weight: bold;
       font-family: Helvetica, Arial, sans-serif; }
@@ -820,25 +827,25 @@ div .comment {
       color: inherit;
       font-weight: inherit;
       font-family: inherit; }
-  .inbox tr.privatemsg-unread, .outbox tr.privatemsg-unread {
-    /* background-color: $messageNewBG !important;*/ }
   .inbox td, .outbox td {
-    background-color: inherit; }
+    background-color: inherit;
+    padding-top: 0.2em; }
+  .inbox .views-field-field-visible-name a, .outbox .views-field-field-visible-name a {
+    color: #000000; }
 
-#privatemsg-new {
+#message-ui-instance-message-manage {
   /*tlacitko odeslat*/
   /*tlacitko smazat / zrusit / cerveny X*/ }
-  #privatemsg-new #edit-actions {
+  #message-ui-instance-message-manage #edit-actions {
     /*zmeni kurzor na pointer*/
     cursor: pointer;
     /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/ }
-    #privatemsg-new #edit-actions input, #privatemsg-new #edit-actions a[id^="edit"] {
-      height: 60px;
+    #message-ui-instance-message-manage #edit-actions input, #message-ui-instance-message-manage #edit-actions .cancelMessage {
+      min-height: 1em;
       background-color: transparent;
       background-repeat: no-repeat;
       background-position: center left;
-      background-size: auto 50px;
-      /*Askaru chtel tyhle ikonky o neco mensi*/
+      background-size: auto 1em;
       /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
       margin-right: 20px;
       /*balanc a destylizace input button stylu*/
@@ -847,11 +854,11 @@ div .comment {
       color: rgba(255, 255, 255, 0.8);
       font-size: 19px;
       font-family: Calibri, Candara, Arial, sans-serif; }
-    #privatemsg-new #edit-actions input:hover, #privatemsg-new #edit-actions a[id^="edit"]:hover {
+    #message-ui-instance-message-manage #edit-actions input:hover, #message-ui-instance-message-manage #edit-actions a[id^="edit"]:hover {
       color: white; }
-  #privatemsg-new input[id^="edit-submit"] {
+  #message-ui-instance-message-manage input[id^="edit-submit"] {
     background-image: url("../img/messageIcons/sendMessage_h60.png"); }
-  #privatemsg-new input[id^="edit-cancel"], #privatemsg-new a[id^="edit-cancel"] {
+  #message-ui-instance-message-manage .cancelMessage {
     background-image: url("../img/messageIcons/cancelMessage_h60.png"); }
 
 /*OSTATNI*/
@@ -862,16 +869,18 @@ div .comment {
 
 /*TLACITKA FORMULARU*/
 #edit-actions, #edit-actions--2, .form-actions {
+  text-align: center;
   /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/ }
   #edit-actions input, #edit-actions a[id^="edit"], #edit-actions--2 input, #edit-actions--2 a[id^="edit"], .form-actions input, .form-actions a[id^="edit"] {
-    height: 60px;
+    min-height: 1em;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: left;
+    background-size: contain;
     /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
     margin-right: 20px;
     /*balanc a destylizace input button stylu*/
-    padding: 1em 0 1em 50px;
+    padding: 0.2em 0 0.2em 1.3em;
     border: none;
     /*linkizace textu*/
     color: rgba(255, 255, 255, 0.8);

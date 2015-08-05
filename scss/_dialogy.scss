@@ -7,18 +7,21 @@
 
 /*TLACITKA FORMULARU*/
 #edit-actions, #edit-actions--2, .form-actions {
+  text-align: center;
+
   /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/
   input, a[id^="edit"] {
-    height: 60px;
+    min-height: 1em;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: left;
+    background-size: contain;
 
     /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
     margin-right: 20px;
 
     /*balanc a destylizace input button stylu*/
-    padding: 1em 0 1em 50px;
+    padding: 0.2em 0 0.2em 1.3em;
     border: none;
 
     /*linkizace textu*/

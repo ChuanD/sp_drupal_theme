@@ -94,7 +94,14 @@
   table {
     width: 100%;
   }
-
+  thead {
+    border-bottom: 2px solid #000000;
+  }
+  tbody:before {
+    content: '';
+    display: block;
+    height: 0.3em;
+  }
   tr {
     background-color: transparent;
 
@@ -106,7 +113,6 @@
     }
     th {
       font-size: $buttonFontSize;
-      padding-bottom: 0.5em;
 
       color: black;
       font-weight: bold;
@@ -125,28 +131,31 @@
       font-family: inherit;
     }
   }
-  tr.privatemsg-unread {
-    /* background-color: $messageNewBG !important;*/
-  }
+
   td {
     background-color: inherit;
+    padding-top: 0.2em;
+  }
+  .views-field-field-visible-name {
+    a {
+      color: #000000;
+    }
   }
 }
 
-#privatemsg-new {
+#message-ui-instance-message-manage {
 
   #edit-actions {
     /*zmeni kurzor na pointer*/
     cursor: pointer;
 
     /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/
-    input, a[id^="edit"] {
-      height: 60px;
+    input, .cancelMessage {
+      min-height: 1em;
       background-color: transparent;
       background-repeat: no-repeat;
       background-position: center left;
-      background-size: auto 50px;
-      /*Askaru chtel tyhle ikonky o neco mensi*/
+      background-size: auto 1em;
 
       /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
       margin-right: 20px;
@@ -170,7 +179,7 @@
   }
 
   /*tlacitko smazat / zrusit / cerveny X*/
-  input[id^="edit-cancel"], a[id^="edit-cancel"] {
+  .cancelMessage {
     background-image: url("../img/messageIcons/cancelMessage_h60.png");
   }
 }

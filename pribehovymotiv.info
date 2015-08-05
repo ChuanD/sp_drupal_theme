@@ -6,6 +6,7 @@ engine = phptemplate
 stylesheets[all][] = stylesheets/screen.css
 stylesheets[all][] = stylesheets/system.menus.css
 stylesheets[all][] = stylesheets/vertical-tabs.css
+stylesheets[all][] = stylesheets/filter.css
 stylesheets[print][] = stylesheets/print.css
 stylesheets[ie][] = stylesheets/ie.css
 

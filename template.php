@@ -83,7 +83,6 @@ function pribehovymotiv_filter_tips($tips, $long = FALSE, $extra = '')
 {
     return '';
 }
-
 function pribehovymotiv_filter_tips_more_info()
 {
     return '';

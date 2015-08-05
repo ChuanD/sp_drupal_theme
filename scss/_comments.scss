@@ -17,7 +17,9 @@ div .comment {
   border: 1px solid $commentsBG2;
   padding: 0.2em;
   .commentAuthor {
-
+    a {
+      color: #000000;
+    }
   }
   .commentDate {
     position: relative;

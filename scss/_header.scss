@@ -75,7 +75,7 @@
     }
 
     .headerUsername {
-      flex: 1 1;
+      flex: 1 1 1em;
       order: 2;
 
       color: $H2DarkColor;
@@ -118,14 +118,14 @@
 }
 
 #header-left
-/*tohle dela background k headerboxu... jenze je to konkretni view, takze treba anonymni profil je bez backgroundu, OPRAVIT!!!!*/
-/*moznosti:
-- region last?
-- multiple ids?
-- restrukturalizace?
-- panelizace?
-*/
-                          #block-views-view-logged-user-block {
+  /*tohle dela background k headerboxu... jenze je to konkretni view, takze treba anonymni profil je bez backgroundu, OPRAVIT!!!!*/
+  /*moznosti:
+  - region last?
+  - multiple ids?
+  - restrukturalizace?
+  - panelizace?
+  */
+#block-views-view-logged-user-block {
 
 }
 
