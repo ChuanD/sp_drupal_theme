@@ -25,10 +25,10 @@
 <?php
 //TODO !!! Zmenit template pro nedostupnou stranku !!!
 $path = drupal_get_path('theme', 'pribehovymotiv');
-$image_path = $path . '/img/betlem.jpg';
+$image_path = $path . '/img/underconstruction.jpg';
 ?>
 <div id="UnderConstruction"
-     style="position: absolute; width: 96%; height: 99%; background-repeat: no-repeat; background-size: contain; background-position: top center; background-image: url('<?php echo $image_path; ?>'); "
+     style="width: 100%; height: 100%; background-color: black; background-repeat: no-repeat; background-size: contain; background-position: center center; background-image: url('<?php echo $image_path; ?>'); "
      title="Viribus unitis"></div>
 </body>
 </html>

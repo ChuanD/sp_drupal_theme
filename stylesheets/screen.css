@@ -607,6 +607,13 @@ h4 {
   color: rgba(195, 0, 227, 0.9); }
 
 /*PANELY A SEKCE*/
+/*Nabidka dejovych linii pribehu*/
+.menuDejovychLinii {
+  /*teaser dejove linie*/ }
+  .menuDejovychLinii .teaserDejoveLinie {
+    width: 50%;
+    text-align: center; }
+
 .seznam-kapitol {
   padding: 10px 10px 10px 10px; }
   .seznam-kapitol h3 {
@@ -795,6 +802,45 @@ div .comment {
   .messageFooter ul.inline li.comment-reply a {
     background-image: url("../img/commentIcons/reply_h60.png"); }
 
+/*
+intercom navigace new message - inbox - sent
+*/
+.intercomNav {
+  width: 90%;
+  height: 1em;
+  margin: 1em auto 2em auto; }
+  .intercomNav .intercomNewMessage {
+    float: left;
+    min-width: 3em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 2em;
+    /*balanc a destylizace input button stylu*/
+    padding-left: 42px;
+    background-image: url("../img/messageIcons/newMessage_h60.png"); }
+  .intercomNav .intercomInbox {
+    float: right;
+    min-width: 2em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 1em;
+    /*balanc a destylizace input button stylu*/
+    padding: 0 0 0 26px;
+    background-image: url("../img/messageIcons/preview_h60.png"); }
+  .intercomNav .intercomSent {
+    float: right;
+    margin-left: 2em;
+    min-width: 3em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 2em;
+    /*balanc a destylizace input button stylu*/
+    padding-left: 42px;
+    background-image: url("../img/messageIcons/messageSent_h60.png"); }
+
 /*inbox message list styl*/
 .inbox, .outbox {
   width: 100%;
@@ -845,7 +891,7 @@ div .comment {
       background-color: transparent;
       background-repeat: no-repeat;
       background-position: center left;
-      background-size: auto 1em;
+      background-size: auto 2em;
       /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
       margin-right: 20px;
       /*balanc a destylizace input button stylu*/
@@ -872,7 +918,6 @@ div .comment {
   text-align: center;
   /*tlacitka jako hezci tlacitka, odkazy taky jako hezci tlacitka*/ }
   #edit-actions input, #edit-actions a[id^="edit"], #edit-actions--2 input, #edit-actions--2 a[id^="edit"], .form-actions input, .form-actions a[id^="edit"] {
-    min-height: 1em;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: left;
@@ -880,7 +925,7 @@ div .comment {
     /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
     margin-right: 20px;
     /*balanc a destylizace input button stylu*/
-    padding: 0.2em 0 0.2em 1.3em;
+    padding: 0.8em 0 0.8em 1.6em;
     border: none;
     /*linkizace textu*/
     color: rgba(255, 255, 255, 0.8);

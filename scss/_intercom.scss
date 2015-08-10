@@ -87,6 +87,63 @@
 
 }
 
+/*
+intercom navigace new message - inbox - sent
+*/
+.intercomNav {
+  width: 90%;
+  height: 1em;
+  margin: 1em auto 2em auto;
+
+  .intercomNewMessage {
+    float: left;
+
+    min-width: 3em;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 2em;
+
+    /*balanc a destylizace input button stylu*/
+    padding-left: 42px;
+
+    background-image: url("../img/messageIcons/newMessage_h60.png");
+  }
+  .intercomInbox {
+    float: right;
+
+    min-width: 2em;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 1em;
+
+    /*balanc a destylizace input button stylu*/
+    padding: 0 0 0 26px;
+
+    background-image: url("../img/messageIcons/preview_h60.png");
+  }
+
+  .intercomSent {
+    float: right;
+    margin-left: 2em;
+
+    min-width: 3em;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 2em;
+
+    /*balanc a destylizace input button stylu*/
+    padding-left: 42px;
+
+    background-image: url("../img/messageIcons/messageSent_h60.png");
+  }
+}
+
 /*inbox message list styl*/
 .inbox, .outbox {
   width: 100%;
@@ -155,7 +212,7 @@
       background-color: transparent;
       background-repeat: no-repeat;
       background-position: center left;
-      background-size: auto 1em;
+      background-size: auto 2em;
 
       /*pouzitelnost - zabrani neumyslnemu klikani na spatne tlacitko*/
       margin-right: 20px;
